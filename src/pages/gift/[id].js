@@ -40,7 +40,7 @@ const giftData = [
 ]
 
 
-const gift = () => {
+const Gift = () => {
   const router = useRouter();
   const { id: giftId } = router.query;
   const currentGiftId = giftData.findIndex((gift) => gift._id === giftId);
@@ -112,4 +112,4 @@ const gift = () => {
   )
 }
 
-export default gift
+export default Gift;
